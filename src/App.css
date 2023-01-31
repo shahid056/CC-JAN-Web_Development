@@ -1,38 +1,432 @@
-.App {
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+
+html {
+  font-size: 6.25%;
+}
+
+
+.app {
+  width: 100%;
+  height: 100Vh;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+
+}
+
+.right {
+  position: relative;
+  padding: 20rem;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 500rem;
+  position: relative;
+  left: 180rem;
+  top: 40rem;
+}
+
+form {
+  display: grid;
+  background-color: white;
+  width: 450rem;
+  height: 50rem;
+  position: relative;
+  border-radius: 12rem;
+
+  grid-template-columns: 50rem 350rem 1fr;
+
+}
+
+form .searhbox {
+  height: inherit;
+  border: none;
+  outline: none;
+}
+
+form button {
+  border: none;
+  height: inherit;
+  cursor: pointer;
+  background-color: rgb(21, 230, 178);
+  font-size: 20rem;
+  font-weight: bold;
+  color: black;
+
+}
+
+.s-icon {
+  align-self: center;
+  font-size: 40rem;
+  padding-left: 12rem;
+}
+
+
+
+
+.left {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  top: 50rem;
+  width: 500rem;
+  height: 520rem;
+  border: 2px solid black;
+  border-radius: 8rem;
+  background-color: rgba(255, 255, 255, 0.399);
+  box-shadow: 10px 10px 5px rgb(50, 53, 54);
+}
+
+
+.head {
+  font-size: 10rem;
+  text-align: center;
+  padding: 10rem;
+
+}
+
+.deg {
+  position: relative;
+  font-size: 20rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 80rem;
+  padding-right: 10rem;
+
+}
+
+.deg h2 {
+  margin-top: 20rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.deg h5 {
+  margin-top: 40rem;
+  margin-right: 80rem;
+  color: rgb(0, 0, 0);
+  font-size: 15rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cloud {
+  width: 120rem;
+  height: 120rem;
+  position: relative;
+  left: 0rem;
+  top: 0rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.location {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.location h1 {
+  text-align: center;
+  font-size: 25rem;
+  padding-left: 22rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.icon-l {
+  font-size: 20rem;
+  padding: 0%;
+  position: relative;
+  left: 150rem;
+  top: 30rem;
+  color: red;
+
+}
+
+
+.weatherinfo {
+  position: relative;
+
+}
+
+.weatherinfo h1 {
+  text-align: left;
+  padding-left: 12rem;
+  font-size: 15rem;
+
+}
+
+.all-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 12rem;
+  text-align: center;
+
+
+}
+
+.all-data .sunset,
+.Humidity,
+.Wind,
+.Pressure {
+  padding: 10rem;
+  margin-left: 35rem;
+  margin-top: 5rem;
+  display: flex;
+}
+
+.icon-d {
+  margin-right: 12rem;
+  font-size: 30rem;
+}
+
+.data {
+  color: rgb(0, 0, 0);
+  font-size: 10rem;
+  font-weight: lighter;
+}
+
+@media (max-width:1300px) {
+  html {
+    font-size: 6%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width:1250px) {
+  html {
+    font-size: 5%;
   }
+
+  .Container {
+    position: relative;
+    top: 50rem;
+  }
+}
+
+@media (max-width:1000px) {
+  html {
+    font-size: 4.5%;
+  }
+
+  .Container {
+    position: relative;
+    top: 50rem;
+  }
+}
+
+
+@media (max-width:900px) {
+  html {
+    font-size: 4%;
+  }
+
+  .Container {
+    position: relative;
+    top: 100rem;
+  }
+}
+
+@media (max-width:800px) {
+  html {
+    font-size: 3.5%;
+  }
+
+  .Container {
+    position: relative;
+    top: 200rem;
+  }
+}
+
+@media (max-width:700px) {
+  .Container {
+    display: inline-block;
+
+  }
+
+  .Container {
+    position: relative;
+    top: 90rem;
+    left: 250rem;
+  }
+
+  .app {
+    overflow-x: auto;
+  }
+
+  .app::-webkit-scrollbar {
+    width: 0;
+
+  }
+
+  .card {
+    position: relative;
+    left: 60rem;
+    width: 600rem;
+    height: 650rem;
+    top: 80rem;
+    border: 2px solid black;
+    border-radius: 8rem;
+    background-color: white;
+    box-shadow: 10px 10px 5px rgb(50, 53, 54);
+  }
+
+  .icon-l {
+    font-size: 20rem;
+    padding: 0%;
+    position: relative;
+    left: 200rem;
+    top: 34rem;
+    color: red;
+  }
+
+  img {
+    width: 500rem;
+    position: relative;
+    left: 100rem;
+    top: 40rem;
+  }
+
+  form {
+    display: grid;
+    background-color: white;
+    width: 500rem;
+    height: 50rem;
+    position: relative;
+    top: 20rem;
+    left: 120rem;
+    grid-template-columns: 50rem 280rem 1fr;
+
+
+  }
+
+  .deg {
+    position: relative;
+    font-size: 20rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40rem;
+    padding-right: 40rem;
+
+  }
+
+
+
+  .deg h2 {
+    margin-top: 20rem;
+    text-align: center;
+  }
+
+  .deg h5 {
+    margin-top: 40rem;
+    margin-right: 300rem;
+    color: gray;
+    font-size: 15rem;
+  }
+
+
+  .all-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12rem;
+    text-align: center;
+
+  }
+
+  .all-data .sunset,
+  .Humidity,
+  .Wind,
+  .Pressure {
+    padding: 40rem;
+    margin-left: 50rem;
+    margin-top: 5rem;
+    display: flex;
+  }
+}
+
+@media (max-width:600px) {
+  .Container {
+    position: relative;
+    top: 90rem;
+    left: 200rem;
+  }
+}
+
+@media (max-width:550px) {
+  .Container {
+    position: relative;
+    top: 90rem;
+    left: 150rem;
+  }
+}
+
+@media (max-width:500px) {
+  .Container {
+    position: relative;
+    top: 90rem;
+    left: 50rem;
+  }
+}
+
+@media (max-width:400px) {
+  .Container {
+    position: relative;
+    top: 90rem;
+    left: 0rem;
+  }
+}
+
+@media (max-width:350px) {
+
+
+
+
+  .card {
+    position: relative;
+    left: 60rem;
+    width: 550rem;
+    height: 650rem;
+    top: 80rem;
+    border: 2px solid black;
+    border-radius: 8rem;
+    background-color: white;
+    box-shadow: 10px 10px 5px rgb(50, 53, 54);
+  }
+}
+
+
+
+.box {
+  padding-left: 20rem;
+  padding: 12rem;
+}
+
+.feture-p {
+
+
+  width: 90rem;
+
+  font-size: 20rem;
+  height: 90rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.scrol {
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.scrol::-webkit-scrollbar {
+  width: 0;
+}
+
+.feture-p h3 {
+  font-size: 18rem;
+
 }
